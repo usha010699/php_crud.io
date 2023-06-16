@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crud</title>
+    </head>
+    <body>
+        <form method="post" action="php_code1.php">
+            <table>
+                <tr>
+                    <td>
+                        <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td> <input type="text" name="name" value="<?php echo $name; ?>"></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td> <input type="email" name="email" value="<?php echo $email; ?>"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td> <input type="password" name="password" value="<?php echo $password; ?>"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <?php  if(update == true) :?>
+                        <button type="submit" name="update">update </button>
+                        <?php else :?>
+                        <button type="submit" name="save">save </button>
+                        <?php endif ?>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
+    </body>
+</html>
